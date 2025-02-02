@@ -1,0 +1,1 @@
+# Cyber-Tech-Ubuntu-Practice-image-write-up
