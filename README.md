@@ -99,6 +99,28 @@ Answer: RSA 4096 / 4096
 Answer: 2027-03-13
 
 
+
+# MISC
+
+## Secret file
+In jmuskingtons documents you find a secret.txt file. When you cat it out you cant the message.
+This text file tells you how to gain a few points!
+
+Unfortunately that information is hidden.
+
+To find the hidden information you have to use getfattr
+
+![image](https://github.com/user-attachments/assets/547e343a-41a2-4eb6-aafd-70585dc9f55e)
+
+This then shows us the user.shhh file at first i thought it was a file to look for but its just another part of of getfattr
+
+![image](https://github.com/user-attachments/assets/ad5f0a47-4397-42f7-a0ae-5911175cb578)
+
+Using the user.shhh file we now know theres a hidden file in the music directory.
+
+![image](https://github.com/user-attachments/assets/85e93d98-2cf3-4125-98f5-83a1b1894c67)
+
+Doing ls -la lists the hidden file and if you cat it out by doing cat .secretfile you can find information for other vulns.
 # Vulnerabilites
 
 ## Uninstall the 'hacking tools'
@@ -119,6 +141,16 @@ you can do that using rm meme.jpg or getCooked.jpg
 
 ## Malicious user creation script removed
 If you remember the roblox generator site we found in our history. You could also assume that a user downloaded the script. To find it, look in the downloads folder of jmuskington. and simply delete the file. using rm generator.sh
+There is also another another malware file in /etc called notMalware.sh which is creating multiple hacker users by the minute. Please delete this script using sudo
+
+![image](https://github.com/user-attachments/assets/dab27c77-04e0-4ede-b84d-5473a4c4cadf)
+
+A look at the malware file
+
+## Unauthorized user[s] Hacker removed
+After remove the notMalware.sh script that was making multiple users name hacker 
+this loop should be able to remove all of the hacker accounts from passwd,group, and shadow (and most of the hacker home directories) . I would suggest putting this in a bash script instead though.
+![image](https://github.com/user-attachments/assets/172ae204-24cb-4a3c-ae53-65b0c02c845b)
 
 ## Ensure firewall is active 
 The firewall is listed as a critical service make sure it is working by doing sudo ufw enable.
@@ -129,5 +161,11 @@ In /etc/groups you can see that some users are in the sudo group when they are a
 ## Ensure tslow is an Administator 
 In /etc/groups make sure that tslow is in the sudo group.
 
+## Change insecure password for user bzuckerman
+The user bzuckerman has a very insecure name so to fix that do sudo passwd bzuckerman and change his password to password123!@#.
+
+
+### The End
+I would like to thank immortal for creating this image and helping me with the last few questions. I deciced to make this write up to help anyone who would need it like i did.
 ![image](https://github.com/user-attachments/assets/aee0aee1-fe36-4b6d-85b9-0d6072213aa8)
 
