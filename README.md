@@ -20,6 +20,44 @@ Example Answer: fa690b82061edfd2852629aeba8a8977b57e40fcb77d1a7a28b26cba62591204
 To get the Answer we would have to use the find command and look for a .jpg file.
 I did find /home/*/ -type f -iname "*.jpg" to find the file. The "*" made the command look through all of users files and let me to find my answer. 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/aee0aee1-fe36-4b6d-85b9-0d6072213aa8)
+
+
 Two files should pop up so keep note of both 
 
 Answer: 
