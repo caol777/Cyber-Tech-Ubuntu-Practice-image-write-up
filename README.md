@@ -56,6 +56,7 @@ Here we find out 2nd answer.
 
 
 Answer: https://fastanddanger2.github.io
+
 Answer: Secret Message: It doesn't actually give free robux!!! SHHHHH
 
 ## Forensic Question 3
@@ -72,6 +73,7 @@ After finding the file we will use steghide to find the text file hidden in the 
 ![image](https://github.com/user-attachments/assets/de3d8599-897d-4acf-8b39-7538b5509fec)
 
 After doing cat extract.txt we find the message "I'll be back - HackerXYZ" which is our answer
+
 Answer: I'll be back - HackerXYZ
 
 ## Forensic Question 4
@@ -91,7 +93,9 @@ For this answer you would have to look around for any coding applications. Like 
 To answer these questions i just looked up notepad++ release key fingerprint and found them online or through chatgpt.
 
 Answer: 14BC E436 2749 B2B5 1F8C 7122 6C42 9F1D 8D84 F46E
+
 Answer: RSA 4096 / 4096
+
 Answer: 2027-03-13
 
 
@@ -105,10 +109,12 @@ to delete these simply do sudo apt remove nmap / sudo apt remove wireshark.
 
 ## Removed Unauthorized user cpitt
 If you look through the /etc/passwd file you can see alot of users who arent supposed to be on the system. cpitt is one of them and to remove that user you can do
+
 sudo userdel -r cpitt 
 
 ## Unauthorized media files are removed
 The same two .jpg files that we found before need to be removed from the system as they are non-work related media files.
+
 you can do that using rm meme.jpg or getCooked.jpg
 
 ## Malicious user creation script removed
